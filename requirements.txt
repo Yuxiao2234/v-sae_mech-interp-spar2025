@@ -21,6 +21,8 @@ matplotlib>=3.7.0
 # Development and Tracking
 wandb>=0.15.0
 nnsight>=0.1.0
+transformer_lens>=2.0.0,<4  # buffer.py imports HookedTransformer, removed in TransformerLens 4.0
+circuitsvis>=1.43.2  # imported by dictionary_learning/interp.py
 
 # Optional but Recommended
 zstandard>=0.21.0  # For compressed data loading

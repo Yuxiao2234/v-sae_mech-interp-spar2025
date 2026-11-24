@@ -42,7 +42,8 @@ This repository builds upon the foundational dictionary_learning framework to ex
 ```bash
 git clone https://github.com/Yuxiao2234/v-sae_mech-interp-spar2025.git
 cd v-sae_mech-interp-spar2025
-pip install -e .
+pip install -r requirements.txt
+export PYTHONPATH="$PWD"  # no pyproject.toml: dictionary_learning is imported from the checkout
 ```
 
 **Requirements:** Python ≥ 3.10, PyTorch ≥ 1.12
